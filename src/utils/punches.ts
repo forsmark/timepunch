@@ -29,10 +29,6 @@ export const usePunchStore = create<PunchState>((set) => ({
   punchOut: () => set({ punchedIn: false }),
 }));
 
-const resetPunchStore = () => {
-  usePunchStore.setState(defaultPunchState);
-};
-
 export const punchIn = async (
   options?: {
     vacation?: boolean;
